@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroForte & Sustentável - Maquinários do Futuro</title>
+    <style>
+        /* CSS para o visual do site */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho e Menu */
+        header {
+            background-color: #1e4620; /* Verde escuro institucional */
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #8bd98f; /* Verde claro ao passar o mouse */
+        }
+
+        /* Banner Principal */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1200') no-repeat center center/cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+        }
+
+        /* Seções de Conteúdo */
+        .section {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1e4620;
+            font-size: 2rem;
+        }
+
+        /* Cards de Tecnologia */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #2e7d32;
+        }
+
+        .card h3 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <h2>Agrinho 2026</h2>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#tecnologias">Tecnologias</a></li>
+                    <li><a href="#impacto">Impacto Ambiental</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Como a modernização e a regulagem correta dos maquinários agrícolas garantem o equilíbrio entre a alta produção e a preservação do meio ambiente.</p>
+        </div>
+    </section>
+
+    <section id="tecnologias" class="section">
+        <div class="container">
+            <h2 class="section-title">Inovações em Maquinários</h2>
+            <div class="grid">
+                
+                <div class="card">
+                    <h3>1. Telemetria e IoT</h3>
+                    <p>Sensores instalados nos tratores monitoram o consumo de combustível e geram rotas inteligentes. Isso reduz a emissão de gases poluentes e evita que as máquinas compactem o solo desnecessariamente.</p>
+                </div>
+
+                <div class="card">
+                    <h3>2. Agricultura de Precisão</h3>
+                    <p>Sistemas de GPS e distribuidores automatizados aplicam sementes e fertilizantes na quantidade exata exigida pelo solo. Zero desperdício e maior proteção aos lençóis freáticos.</p>
+                </div>
+
+                <div class="card">
+                    <h3>3. Manutenção Preditiva</h3>
+                    <p>Softwares que avisam o momento exato de trocar peças gastas, impedindo vazamentos de óleo lubrificante no solo e mantendo o motor operando com eficiência máxima.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="impacto" class="section" style="background-color: #e8f5e9;">
+        <div class="container" style="text-align: center; max-width: 800px;">
+            <h2 class="section-title">O Equilíbrio na Prática</h2>
+            <p style="font-size: 1.1rem; color: #444;">
+                Uma única colheitadeira desregulada pode desperdiçar até 10% dos grãos colhidos e queimar muito mais diesel do que o necessário. Investir em tecnologia embarcada e treinamento de operadores não é apenas uma escolha econômica, é um compromisso urgente com o futuro do nosso planeta.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Concurso Agrinho. Desenvolvido por um Aluno do 1º Ano do Ensino Médio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
