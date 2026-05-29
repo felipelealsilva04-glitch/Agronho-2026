@@ -64,7 +64,7 @@
 
         /* Banner Principal */
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?q=80&w=1200') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1526045612212-70caf35c14df?q=80&w=1200') no-repeat center center/cover;
             color: white;
             padding: 100px 0;
             text-align: center;
@@ -143,6 +143,40 @@
         <div class="container">
             <h1>Agro Forte, Futuro Sustentável</h1>
             <p>Como a modernização e a regulagem correta dos maquinários agrícolas garantem o equilíbrio entre a alta produção e a preservação do meio ambiente.</p>
+
+            <div id="jogo-ambiental" style="background: rgba(255,255,255,0.95); color: #1e4620; border-radius: 16px; padding: 24px; margin: 40px auto 0 auto; max-width: 720px; box-shadow: 0 16px 40px rgba(0,0,0,0.18); text-align: left;">
+                <h3 style="margin-top: 0;">🎮 Jogo ambiental</h3>
+                <p style="margin-bottom: 20px;">Teste seus conhecimentos: escolha a ação mais sustentável em cada situação.</p>
+                <p id="jogo-pergunta" style="font-size: 1.05rem; font-weight: 600; margin-bottom: 18px;">Pressione iniciar para começar.</p>
+                <div id="jogo-opcoes" style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 18px;"></div>
+                <button id="btn-iniciar-jogo" style="background: #2e7d32; color: #fff; border: none; padding: 14px 22px; border-radius: 10px; cursor: pointer; font-size: 1rem;">Iniciar jogo</button>
+                <div id="jogo-resultados" style="margin-top: 16px; color: #333; font-weight: 600;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="fazendeiro" class="section" style="background-color: #eef7ed;">
+        <div class="container" style="max-width: 900px;">
+            <h2 class="section-title">Simulação do Fazendeiro</h2>
+            <div class="card" style="text-align: left;">
+                <p>Escolha como o fazendeiro gere a propriedade e veja o resultado ambiental e financeiro.</p>
+                <div style="display: grid; gap: 14px; margin: 18px 0;">
+                    <label style="display: flex; align-items: center; gap: 10px;">
+                        <input type="radio" name="fazendeiro-acao" value="tecnologia" checked>
+                        Usa tecnologia de precisão, mantém máquinas calibradas e faz rotação de culturas.
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 10px;">
+                        <input type="radio" name="fazendeiro-acao" value="conservador">
+                        Dá prioridade a irrigação excessiva e usa fertilizantes sem análise do solo.
+                    </label>
+                    <label style="display: flex; align-items: center; gap: 10px;">
+                        <input type="radio" name="fazendeiro-acao" value="balanceado">
+                        Equilibra custos, faz manutenção básica e aplica insumos com critério moderado.
+                    </label>
+                </div>
+                <button id="btn-simular-fazendeiro" style="background: #2e7d32; color: #fff; border: none; padding: 14px 22px; border-radius: 10px; cursor: pointer; font-size: 1rem;">Simular decisões</button>
+                <div id="resultado-simulacao" style="display: none; margin-top: 18px;"></div>
+            </div>
         </div>
     </section>
 
@@ -171,19 +205,28 @@
     </section>
 
     <section id="impacto" class="section" style="background-color: #e8f5e9;">
-        <div class="container" style="text-align: center; max-width: 800px;">
+        <div class="container" style="max-width: 900px;">
             <h2 class="section-title">O Equilíbrio na Prática</h2>
-            <p style="font-size: 1.1rem; color: #444;">
+            <p style="font-size: 1.1rem; color: #444; text-align: center;">
                 Uma única colheitadeira desregulada pode desperdiçar até 10% dos grãos colhidos e queimar muito mais diesel do que o necessário. Investir em tecnologia embarcada e treinamento de operadores não é apenas uma escolha econômica, é um compromisso urgente com o futuro do nosso planeta.
             </p>
+
+            <div class="card" style="margin: 40px auto 0 auto; max-width: 560px; text-align: left;">
+                <h3 style="color: #1e4620; margin-bottom: 18px;">Calcule o impacto ambiental</h3>
+                <label for="horas-trabalho" style="display: block; margin-bottom: 10px; font-weight: 600;">Horas de uso do maquinário:</label>
+                <input id="horas-trabalho" type="number" min="0.1" step="0.1" placeholder="Ex.: 8" style="width: 100%; padding: 14px 16px; border-radius: 8px; border: 1px solid #cfd8dc; margin-bottom: 18px; font-size: 1rem;" />
+                <button id="btn-calcular" style="background: #2e7d32; color: #fff; border: none; padding: 14px 22px; border-radius: 8px; cursor: pointer; font-size: 1rem;">Calcular impacto</button>
+                <div id="resultado-calculo" style="display: none; margin-top: 22px;"></div>
+            </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Concurso Agrinho. Desenvolvido por um Aluno do 1º Ano do Ensino Médio.</p>
+            <p>&copy; 2026 Concurso Agrinho. Desenvolvido por Felipe.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
